@@ -87,6 +87,12 @@ blockquote span{color:var(--accent)}
 .card h3{font-size:1.04rem; margin-bottom:9px; font-weight:650}
 .card p{color:var(--muted); font-size:.93rem}
 
+/* journey path pills */
+.path{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:4px 0 36px}
+.path .step{border:1px solid var(--line); color:var(--muted); font-size:.88rem;
+  padding:6px 14px; border-radius:999px; background:rgba(255,255,255,.025); white-space:nowrap}
+.path .arr{color:var(--accent); font-weight:600}
+
 /* timeline */
 .timeline{position:relative; margin-top:10px}
 .timeline::before{content:''; position:absolute; left:7px; top:6px; bottom:6px; width:2px;
@@ -215,14 +221,20 @@ html.js .reveal.in{opacity:1; transform:none}
         <h3>From concept to SoP</h3>
         <p>RFQ solutioning, estimation and delivery architecture for new programmes;
         end-to-end lifecycle delivery from development through Start of Production
-        into maintenance — 20% above company-average profitability.</p>
+        into maintenance.</p>
       </div>
     </div>
   </section>
 
   <section id="journey">
     <div class="sec-label reveal">Journey</div>
-    <h2 class="reveal">Mechatronics → embedded software → programme leadership → AI</h2>
+    <h2 class="reveal">From mechatronics to AI-driven engineering</h2>
+    <div class="path reveal">
+      <span class="step">Mechatronics</span><span class="arr">→</span>
+      <span class="step">Embedded software</span><span class="arr">→</span>
+      <span class="step">Programme leadership</span><span class="arr">→</span>
+      <span class="step">AI transformation</span>
+    </div>
     <div class="timeline">
       <div class="t-item reveal">
         <div class="when">2018 — present · Luxoft (DXC Technology), Munich</div>
